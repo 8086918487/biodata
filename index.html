@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,600&display=swap"
+rel="stylesheet">
+    <title>Biodata</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+body{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    width: 100%;
+    margin: 40px;
+}
+.cont{
+    width: 80%;
+    height: auto;
+    border: 2px solid red
+    border-radius: 0px 60px 0px 0px;
+}
+#head{
+    font-size: 40px;
+    width: 100%;
+    font-weight: 600;
+    color: blue;
+    text-align: center;
+    font-style: normal;
+}
+.details{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(130, 98, 160);
+    font-style: oblique;
+    padding-left: 100px;
+}
+.content{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(130, 98, 160);
+    font-style: normal;
+    padding-left: 50px;
+
+}
+fieldset{
+    border-radius: 25px;
+    border: 2px solid red;
+    margin: 30px;
+    text-align: left;
+}
+legend{
+    color:  rgb(238, 94, 11);
+    font-size: 25px;
+    align-items: center;
+}
+.value{
+ font-size: 20px;
+}
+    </style>
+</head>
+<body>
+ <div class="cont">
+   <table cellspacing="20px">
+    <tr>
+        <td colspan="2" id="head">BIO DATA</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YqVM77-LzHwDOugZqmxxgNdMh2PjJ50bNQ&usqp=CAU" alt="userimage"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="details" style="color:  rgb(34, 11, 238);">Personel Details:-</td>
+    </tr>
+    <tr class="content">
+        <td >
+          Name :-
+        </td>
+        <td class="value">MOHAMMED NASIH P</td>
+    </tr>
+    <tr class="content">
+        <td>
+          Qualification :-
+        </td>
+        <td class="value">-----Diploma Computer Engineering----<br>----PlusTwo Commerce----<br>----10th----</td>
+    </tr>
+    <tr class="content">
+        <td>
+          Date Of Birth :-
+        </td>
+        <td class="value">16/04/2005</td>
+    </tr>
+    <tr class="content">
+        <td>
+          Hobbies :-
+        </td>
+        <td class="value"><input type="checkbox" name="playing football"
+checked> playing football<br> <input type="checkbox" name="singing"
+checked>singing</td>
+    </tr>
+    <tr class="content">
+        <td>
+          Blood Group :-
+        </td>
+        <td class="value"> A<sup>+ve</sup></td>
+    </tr>
+    <tr class="content">
+        <td>
+          Gender :-
+        </td>
+        <td class="value"><input type="radio" name="gender" checked>MALE</td>
+    </tr>
+
+    </tr>
+   </table>
+   <fieldset>
+    <legend>&nbsp&nbsp--:Family Details:--&nbsp&nbsp</legend>
+    <table cellspacing="20px">
+        <tr class="content">
+            <td>Father Name :-</td>
+            <td class="value">AVARAN</td>
+        </tr>
+        <tr class="content">
+            <td>Mother Name :-</td>
+            <td class="value">SAJIDA</td>
+        </tr>
+
+    </table>
+   </fieldset>
+   <table>
+    <tr>
+        <td colspan="2" class="details" style="color:  rgb(238, 94,
+11)";>Contact Details:-</td>
+    </tr>
+    <tr class="content">
+        <td>Address :-</td>
+        <td class="value">PALOTH(H)<br>
+            PULAMANTHOLE(PO)<br>
+            MALAPPURAM<br>
+            PIN 679323<br><br>
+        </td>
+    </tr>
+    <tr class="content">
+        <td>Mobile Number :-</td>
+        <td class="value">8086918487</td>
+    </tr>
+    <tr class="content">
+        <td>Email Id :-</td>
+        <td class="value">nasihn132@gmail.com</td>
+    </tr>
+   </table>
+ </div>
+</body>
+</html>
